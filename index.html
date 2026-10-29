@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUXE | The Art of Luxury Footwear</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXE SHOES | Luxury Footwear</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--gold:#D4AF37;--black:#0A0A0A;--cream:#FDF9F3}
+:root{--gold:#D4AF37;--black:#0A0A0A;--cream:#FDF9F3;--whatsapp:#25D366}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--black);overflow-x:hidden}
-.header{position:fixed;top:0;width:100%;background:rgba(10,10,10,0.95);backdrop-filter:blur(20px);z-index:1000;padding:18px 50px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,0.3)}
-.logo{font-family:'Cinzel',serif;font-size:28px;letter-spacing:8px;color:var(--gold);font-weight:700}
-.nav{color:#fff;font-size:12px;letter-spacing:3px;word-spacing:20px}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1920');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;position:relative}
-.hero-content h1{font-family:'Cinzel',serif;font-size:80px;letter-spacing:15px;font-weight:400;line-height:1.1;margin-bottom:20px;text-shadow:0 10px 30px rgba(0,0,0,0.5)}
-.hero-content p{font-size:14px;letter-spacing:6px;font-weight:300;margin-bottom:40px;opacity:0.9}
-.btn-gold{background:var(--gold);color:#000;padding:18px 50px;border:none;letter-spacing:4px;font-size:12px;font-weight:600;cursor:pointer;transition:0.4s}
-.btn-gold:hover{background:#fff;transform:translateY(-2px);box-shadow:0 15px 30px rgba(212,175,55,0.4)}
-.section-title{text-align:center;padding:100px 20px 20px}
-.section-title h2{font-family:'Cinzel',serif;font-size:42px;letter-spacing:10px;font-weight:400}
-.section-title .line{width:80px;height:1px;background:var(--gold);margin:20px auto}
-.section-title p{letter-spacing:4px;font-size:11px;opacity:0.6;text-transform:uppercase}
-.products{max-width:1300px;margin:0 auto;padding:40px 30px 100px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.product-card{background:#fff;border:1px solid rgba(0,0,0,0.05);transition:0.5s;position:relative;overflow:hidden}
-.product-card:hover{transform:translateY(-10px);box-shadow:0 30px 60px rgba(0,0,0,0.12);border-color:var(--gold)}
-.product-img{height:340px;background:#fff;display:flex;align-items:center;justify-content:center;padding:30px;position:relative}
-.product-img img{width:100%;height:100%;object-fit:contain;transition:0.6s}
-.product-card:hover .product-img img{transform:scale(1.08)}
-.badge{position:absolute;top:20px;left:20px;background:var(--black);color:var(--gold);font-size:9px;letter-spacing:2px;padding:6px 12px}
-.product-info{padding:25px;text-align:center;border-top:1px solid #f5f5f5}
-.product-info h3{font-family:'Cinzel',serif;font-size:15px;letter-spacing:2px;font-weight:400;margin-bottom:8px}
-.product-info .price{color:var(--gold);font-weight:600;letter-spacing:2px;font-size:14px;margin:12px 0}
-.product-info .desc{font-size:10px;letter-spacing:2px;opacity:0.5;text-transform:uppercase}
-.footer{background:var(--black);color:#fff;padding:80px 50px;text-align:center}
-.footer h2{font-family:'Cinzel',serif;letter-spacing:12px;color:var(--gold);font-size:32px;margin-bottom:20px}
-.chat-btn{position:fixed;bottom:30px;right:30px;background:var(--gold);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;z-index:999;box-shadow:0 10px 30px rgba(0,0,0,0.3);transition:0.3s}
-.chat-btn:hover{transform:scale(1.1)}
-.chat-box{position:fixed;bottom:100px;right:30px;width:360px;height:460px;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.2);z-index:998;display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(212,175,55,0.3)}
-.chat-header{background:var(--black);color:var(--gold);padding:20px;font-family:'Cinzel',serif;letter-spacing:3px;display:flex;justify-content:space-between}
-.chat-messages{flex:1;padding:20px;overflow-y:auto;background:#FDF9F3}
-.msg{margin-bottom:15px;padding:12px 16px;border-radius:15px;font-size:13px;line-height:1.5;max-width:85%}
-.bot{background:#fff;border:1px solid #eee;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+body{font-family:'Montserrat',sans-serif;background:var(--cream)}
+.header{position:fixed;top:0;width:100%;background:#0A0A0A;z-index:1000;padding:18px 30px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Cinzel',serif;font-size:24px;letter-spacing:6px;color:var(--gold);font-weight:700}
+.nav{color:#fff;font-size:11px;letter-spacing:2px}
+.hero{height:80vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1920');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;margin-top:60px}
+.hero h1{font-family:'Cinzel',serif;font-size:50px;letter-spacing:10px;line-height:1.2}
+.section-title{text-align:center;padding:60px 20px 20px}
+.section-title h2{font-family:'Cinzel',serif;font-size:32px;letter-spacing:8px}
+.products{max-width:1200px;margin:0 auto;padding:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:2px solid #eee;overflow:hidden;transition:0.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,0.1)}
+.card img{width:100%;height:250px;object-fit:contain;background:#fff;padding:15px}
+.info{padding:15px;text-align:center;border-top:1px solid #eee}
+.info h3{font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px}
+.filename{background:var(--black);color:var(--gold);padding:8px;font-size:11px;letter-spacing:2px;text-align:center;font-weight:700}
+.price{color:var(--gold);font-weight:700;margin-top:8px;font-size:13px}
+.btn-whatsapp{display:inline-block;background:var(--whatsapp);color:#fff;padding:8px 18px;text-decoration:none;font-size:10px;letter-spacing:1px;margin-top:8px;border-radius:4px;font-weight:600}
+.chat-btn{position:fixed;bottom:25px;right:95px;background:var(--gold);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;z-index:999;box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+.whatsapp-float{position:fixed;bottom:25px;right:25px;background:var(--whatsapp);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:999;box-shadow:0 8px 25px rgba(37,211,102,0.4);text-decoration:none;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+.chat-box{position:fixed;bottom:100px;right:25px;width:360px;height:460px;background:#fff;border-radius:15px;box-shadow:0 20px 60px rgba(0,0,0,0.25);z-index:998;display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(212,175,55,0.3)}
+.chat-header{background:var(--black);color:var(--gold);padding:18px;font-family:'Cinzel',serif;letter-spacing:2px;display:flex;justify-content:space-between;font-size:13px}
+.chat-messages{flex:1;padding:18px;overflow-y:auto;background:#FDF9F3}
+.msg{margin-bottom:12px;padding:10px 14px;border-radius:12px;font-size:12px;line-height:1.5;max-width:85%}
+.bot{background:#fff;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 .user{background:var(--black);color:var(--gold);margin-left:auto}
-.chat-input{display:flex;padding:15px;border-top:1px solid #eee;background:#fff}
-.chat-input input{flex:1;border:none;outline:none;font-size:13px;letter-spacing:1px}
-.chat-input button{background:var(--gold);border:none;padding:8px 18px;cursor:pointer;font-weight:600}
-@media(max-width:900px){.products{grid-template-columns:1fr 1fr}.hero-content h1{font-size:40px;letter-spacing:8px}.header{padding:15px 20px}}
-@media(max-width:600px){.products{grid-template-columns:1fr}}
+.chat-input{display:flex;padding:12px;border-top:1px solid #eee;background:#fff}
+.chat-input input{flex:1;border:none;outline:none;font-size:12px}
+.chat-input button{background:var(--gold);border:none;padding:8px 16px;cursor:pointer;font-weight:700;font-size:11px}
+.footer{background:#0A0A0A;color:#fff;padding:60px 20px;text-align:center}
+.footer h2{font-family:'Cinzel',serif;letter-spacing:12px;color:var(--gold);font-size:28px}
+.footer a{color:var(--gold);text-decoration:none}
+@media(max-width:700px){.products{grid-template-columns:1fr}.hero h1{font-size:28px}.chat-box{width:90%;right:5%}}
 </style>
 </head>
 <body>
-<div class="header"><div class="logo">LUXE</div><div class="nav">COLLECTION HERITAGE BOUTIQUE</div></div>
-<section class="hero"><div class="hero-content"><p>EST. MMXXIV — MULTAN & DUBAI</p><h1>CRAFTED<br>FOR LEGENDS</h1><p>WHERE EVERY STEP TELLS A STORY OF ELEGANCE</p><button class="btn-gold" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">EXPLORE COLLECTION</button></div></section>
-<div class="section-title" id="collection"><p>The Signature Edit</p><h2>MAISON COLLECTION</h2><div class="line"></div><p>Handcrafted Luxury — Limited Edition</p></div>
+<div class="header"><div class="logo">LUXE SHOES</div><div class="nav">SHOES STORE</div></div>
+<section class="hero"><div><p style="letter-spacing:5px;font-size:11px">LUXE SHOES COLLECTION</p><h1>CRAFTED<br>FOR LEGENDS</h1><p style="margin-top:20px"><a href="https://wa.me/923716649231" style="background:var(--gold);color:#000;padding:12px 30px;text-decoration:none;letter-spacing:3px;font-size:11px;font-weight:700">ORDER ON WHATSAPP</a></p></div></section>
+<div class="section-title"><h2>SHOES COLLECTION</h2></div>
+
 <div class="products">
-<div class="product-card"><div class="product-img"><span class="badge">BESTSELLER</span><img src="images/shoe1.jpg"></div><div class="product-info"><h3>NOIR OXFORD</h3><div class="desc">Gents Formal • Italian Leather</div><div class="price">PKR 12,500</div></div></div>
-<div class="product-card"><div class="product-img"><span class="badge">NEW</span><img src="images/shoe2.jpg"></div><div class="product-info"><h3>NOIR STILETTO</h3><div class="desc">Ladies High Heel • 4 Inch</div><div class="price">PKR 15,000</div></div></div>
-<div class="product-card"><div class="product-img"><span class="badge">ROYAL</span><img src="images/shoe3.jpg"></div><div class="product-info"><h3>ROYAL KHUSSA</h3><div class="desc">Bridal Velvet • Hand Embroidered</div><div class="price">PKR 8,500</div></div></div>
-<div class="product-card"><div class="product-img"><img src="images/shoe4.jpg"></div><div class="product-info"><h3>BLANC SNEAKER</h3><div class="desc">Designer Minimal • Gold Edition</div><div class="price">PKR 10,500</div></div></div>
-<div class="product-card"><div class="product-img"><span class="badge">ICON</span><img src="images/shoe5.jpg"></div><div class="product-info"><h3>NUDE ICON PUMP</h3><div class="desc">Suede Elegance • Signature Gold</div><div class="price">PKR 13,500</div></div></div>
-<div class="product-card"><div class="product-img"><span class="badge">LUXE</span><img src="images/shoe6.jpg"></div><div class="product-info"><h3>TERRA LOAFER</h3><div class="desc">Gents Loafer • Gold Buckle</div><div class="price">PKR 11,500</div></div></div>
+<div class="card"><img src="images/shoe1.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe1.jpg+NOT+FOUND'"><div class="filename">👉 shoe1.jpg</div><div class="info"><h3>NOIR OXFORD</h3><div class="price">PKR 12,500</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20NOIR%20OXFORD%20shoe1%20chahiye">WHATSAPP</a></div></div>
+<div class="card"><img src="images/shoe2.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe2.jpg+NOT+FOUND'"><div class="filename">👉 shoe2.jpg</div><div class="info"><h3>NOIR STILETTO</h3><div class="price">PKR 15,000</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20NOIR%20STILETTO%20shoe2%20chahiye">WHATSAPP</a></div></div>
+<div class="card"><img src="images/shoe3.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe3.jpg+NOT+FOUND'"><div class="filename">👉 shoe3.jpg</div><div class="info"><h3>ROYAL KHUSSA</h3><div class="price">PKR 8,500</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20ROYAL%20KHUSSA%20shoe3%20chahiye">WHATSAPP</a></div></div>
+<div class="card"><img src="images/shoe4.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe4.jpg+NOT+FOUND'"><div class="filename">👉 shoe4.jpg</div><div class="info"><h3>BLANC SNEAKER</h3><div class="price">PKR 10,500</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20BLANC%20SNEAKER%20shoe4%20chahiye">WHATSAPP</a></div></div>
+<div class="card"><img src="images/shoe5.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe5.jpg+NOT+FOUND'"><div class="filename">👉 shoe5.jpg</div><div class="info"><h3>NUDE ICON PUMP</h3><div class="price">PKR 13,500</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20NUDE%20PUMP%20shoe5%20chahiye">WHATSAPP</a></div></div>
+<div class="card"><img src="images/shoe6.jpg" onerror="this.src='https://via.placeholder.com/300?text=shoe6.jpg+NOT+FOUND'"><div class="filename">👉 shoe6.jpg</div><div class="info"><h3>TERRA LOAFER</h3><div class="price">PKR 11,500</div><a class="btn-whatsapp" href="https://wa.me/923716649231?text=Salam!%20Mujhe%20TERRA%20LOAFER%20shoe6%20chahiye">WHATSAPP</a></div></div>
 </div>
-<div class="footer"><h2>LUXE</h2><p style="letter-spacing:5px;font-size:11px;opacity:0.6;margin-top:20px">LUXURY IS NOT A PRODUCT — IT'S A LIFESTYLE<br><br>Multan • Lahore • Karachi • Dubai<br>WhatsApp: +92 300 0000000</p><p style="margin-top:40px;font-size:10px;opacity:0.3;letter-spacing:3px">© 2026 LUXE MAISON. ALL RIGHTS RESERVED.</p></div>
+
+<div class="footer"><h2>LUXE SHOES</h2><p style="margin-top:15px">📱 WhatsApp: <a href="https://wa.me/923716649231">03716649231</a></p><p style="margin-top:10px;font-size:11px;opacity:0.6">Multan • Lahore • Karachi</p></div>
+
+<!-- CHATBOT BUTTON (GOLD) -->
 <div class="chat-btn" onclick="toggleChat()">💬</div>
+<!-- WHATSAPP BUTTON (GREEN) -->
+<a href="https://wa.me/923716649231?text=Salam%20LUXE%20Shoes!" class="whatsapp-float">📱</a>
+
+<!-- CHATBOT BOX -->
 <div class="chat-box" id="chatBox">
-<div class="chat-header"><span>LUXE CONCIERGE</span><span style="cursor:pointer" onclick="toggleChat()">✕</span></div>
-<div class="chat-messages" id="chatMessages"><div class="msg bot">Welcome to LUXE Maison ✨ I'm your luxury concierge. Ask me about sizes, prices, delivery, materials?</div></div>
-<div class="chat-input"><input type="text" id="chatInput" placeholder="Type your query..." onkeypress="if(event.key==='Enter') sendMsg()"><button onclick="sendMsg()">SEND</button></div>
+<div class="chat-header"><span>LUXE CONCIERGE ✨</span><span style="cursor:pointer" onclick="toggleChat()">✕</span></div>
+<div class="chat-messages" id="chatMessages">
+<div class="msg bot">Welcome to LUXE Shoes! ✨<br><br>Main aapka luxury assistant hun.<br>Pucheye: price, size, delivery, material?<br><br>WhatsApp: 03716649231</div>
 </div>
+<div class="chat-input"><input type="text" id="chatInput" placeholder="Type here..." onkeypress="if(event.key==='Enter') sendMsg()"><button onclick="sendMsg()">SEND</button></div>
+</div>
+
 <script>
 function toggleChat(){const b=document.getElementById('chatBox');b.style.display=b.style.display==='flex'?'none':'flex'}
 function sendMsg(){
@@ -75,18 +79,21 @@ function sendMsg(){
  const msgs=document.getElementById('chatMessages');
  msgs.innerHTML+=`<div class="msg user">${txt}</div>`; input.value='';
  setTimeout(()=>{
-  let reply="Thank you for your interest in LUXE ✨ Our team will assist you shortly.";
+  let reply="Thanks for interest in LUXE! For quick order WhatsApp: 03716649231";
   const q=txt.toLowerCase();
-  if(q.includes('price')||q.includes('cost')||q.includes('kitne')) reply="Our collection: Noir Oxford 12,500, Stiletto 15,000, Royal Khussa 8,500, Sneaker 10,500, Nude Pump 13,500, Terra Loafer 11,500. Includes premium box.";
-  else if(q.includes('size')||q.includes('number')) reply="Sizes: Gents 39-45, Ladies 36-42, Khussa 36-42. All sizes available. Custom fitting available.";
-  else if(q.includes('delivery')||q.includes('multan')||q.includes('lahore')||q.includes('karachi')) reply="Delivery across Pakistan in 2-3 days. Free delivery above PKR 20,000. COD available.";
-  else if(q.includes('material')||q.includes('leather')||q.includes('quality')) reply="100% premium Italian leather, genuine suede, velvet with gold-plated hardware. Handcrafted by master artisans.";
-  else if(q.includes('return')||q.includes('exchange')) reply="7-day exchange, 30-day warranty. Your satisfaction is our heritage.";
-  else if(q.includes('discount')||q.includes('offer')) reply="10% off on first order. Use code: LUXE10 at checkout.";
-  else if(q.includes('hello')||q.includes('hi')||q.includes('salam')) reply="Hello! Welcome to LUXE Maison — Where luxury meets legacy. How can I assist?";
-  msgs.innerHTML+=`<div class="msg bot">${reply}</div>`; msgs.scrollTop=msgs.scrollHeight;
+  if(q.includes('price')||q.includes('kitne')||q.includes('cost')) reply="💰 Prices: Noir Oxford 12,500, Stiletto 15,000, Royal Khussa 8,500, Sneaker 10,500, Nude Pump 13,500, Terra Loafer 11,500. WhatsApp 03716649231 for order!";
+  else if(q.includes('size')||q.includes('number')) reply="📏 Sizes: Gents 39-45, Ladies 36-42. All sizes available. Custom fitting bhi.";
+  else if(q.includes('delivery')||q.includes('multan')||q.includes('lahore')) reply="🚚 Delivery 2-3 days all Pakistan. Free delivery above 20,000. COD available. WhatsApp: 03716649231";
+  else if(q.includes('material')||q.includes('quality')||q.includes('leather')) reply="✨ 100% Italian leather, genuine suede, velvet with gold hardware. Handcrafted luxury.";
+  else if(q.includes('return')||q.includes('exchange')) reply="🔄 7-day exchange, 30-day warranty.";
+  else if(q.includes('whatsapp')||q.includes('number')||q.includes('contact')) reply="📱 WhatsApp: 03716649231 - Click green button for direct chat! https://wa.me/923716649231";
+  else if(q.includes('discount')||q.includes('offer')) reply="🎁 10% off first order! Code: LUXE10. Order on WhatsApp 03716649231";
+  else if(q.includes('hello')||q.includes('hi')||q.includes('salam')) reply="Hello! Welcome to LUXE Shoes 👟 Luxury ka dusra naam. Kaise madad kar sakta hun? WhatsApp: 03716649231";
+  msgs.innerHTML+=`<div class="msg bot">${reply}<br><br><a href='https://wa.me/923716649231' style='background:#25D366;color:#fff;padding:6px 12px;text-decoration:none;border-radius:4px;font-size:10px'>📱 WhatsApp 03716649231</a></div>`;
+  msgs.scrollTop=msgs.scrollHeight;
  },600);
+ msgs.scrollTop=msgs.scrollHeight;
 }
 </script>
 </body>
-                                                                                                                 </html>
+</html>
